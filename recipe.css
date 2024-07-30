@@ -100,14 +100,16 @@ footer {
 }
 
 #profile{
-  border-radius: 30px;
+  border-radius: 50%;
   display: flex;
-width: 40%;
-height: 40%;
-justify-content: center;
-align-items: flex-start;
-gap: 32px;
-flex-shrink: 0;
+width: 50px;
+height: 50px;
+gap: 35px;
+
+}
+#search {
+  font-size: 32px;
+  margin: 10px 20px 0 0; /* top, right, bottom, left */
 }
 * {
   margin: 0;
@@ -119,29 +121,21 @@ flex-shrink: 0;
 .container {
   width: 77%;
   margin: 0 auto;
-
-  
  }
 .header{
   width: 1110px;
   height: 273px;
-  flex-shrink: 0;
   margin: 0 auto;
 }
 .rating{
   display: inline-flex;
-justify-content: center;
-align-items: center;
 gap: 12px;
 }
 .icons{
   display: flex;
 width: 96px;
 height: 32px;
-justify-content: center;
-align-items: flex-start;
 gap: 32px;
-flex-shrink: 0;
 }
 #header_text{
   color: var(--Fill-Black, #000);
@@ -151,16 +145,13 @@ font-size: 60px;
 font-style: normal;
 font-weight: 700;
 line-height: 72px; 
-margin-top: 20px;
-margin-bottom: 20px;
+margin:20px 0 20px 0 ;
 }
 
 .meta{
   width: 416px;
 height: 32px;
-flex-shrink: 0;
 margin-bottom: 20px;
- 
 }
 .meta ul{
   display: flex;
@@ -172,7 +163,6 @@ margin-bottom: 20px;
   display: flex;
   width: 130px;
   height: 32px;
-  justify-content: center;
   align-items: center;
   gap: 6px;
   flex-shrink: 0;
@@ -180,7 +170,7 @@ margin-bottom: 20px;
 .div{
   display: flex;
   align-items: center;
-  gap: 60%;
+  justify-content: space-between;
  
 }
 #save{
@@ -203,8 +193,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 28px; 
 letter-spacing: -0.2px;
-margin-top: 25px;
-margin-bottom: 25px;
+margin: 25px 0 25px 0;
 }
 
 .image {
@@ -215,10 +204,10 @@ margin-bottom: 25px;
 }
 
 #cake {
-  width: 100%;
-  height: 100%;
+  width: 1100px;
+  height: 625px;
   border-radius: 12px;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 #play {
@@ -229,27 +218,22 @@ margin-bottom: 25px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.section-1{
-  margin: 0 auto;
+.section-1{ 
   height: 5200px;
-  
 }
 
 .recipe_info_menu{
   display: inline-flex;
-align-items: center;
 gap: 24px;
-width: 45%;
-height: 7%;
-margin-left: 13%;
+width: 500px;
+height: 100px;
+margin: 0px 0px 30px 200px;
 }
 
 .recipe_info_menu ul{
   display: flex;
   margin-top: 70px;
   gap: 40px;
-  
 
 }
 .texts{
@@ -276,10 +260,12 @@ line-height: 23px;
 .ingredients{
   width: 395px;
   height: 655px;
-  top: 1288px;
-  left: 165px;
-  margin-top: 30px;
-  margin-left: 200px;
+  margin: 30px 0px 0px 200px ;
+}
+
+input[type="radio"]:checked + label {
+  text-decoration: line-through;
+  color: grey;
 }
 
 #i{
@@ -305,7 +291,6 @@ margin-top: 20px;
 }
 
 .up ul li{
-
 font-family: Inter;
 font-size: 18px;
 font-weight: 400;
@@ -313,7 +298,6 @@ line-height: 28px;
 letter-spacing: -0.20000000298023224px;
 text-align: left;
 margin-top: 22px;
-
 }
 
 .up ul li input{
@@ -322,7 +306,6 @@ margin-top: 22px;
 .down ul li input{
   cursor: pointer;
 }
-
 .down ul li{
   margin-top: 22px;
 font-family: Inter;
@@ -343,8 +326,6 @@ text-align: left;
 .instructions{
   width: Hug (665px)px;
 height: Hug (996px)px;
-top: 75px;
-left: 1px;
 gap: 40px;
 }
 
@@ -366,7 +347,6 @@ height: Hug (84px)px;
 gap: 16px;
 display: flex;
 margin-top: 38px;
-
 }
 
 .instructions ul li .text4{
@@ -386,26 +366,21 @@ text-align: left;
   font-weight: 700;
   line-height: 37px;
   text-align: left;
-  margin-bottom: 10px;
-  margin-top: 27px;
+  margin: 27px 0px 10px 0px;
 }
 
 .nutrition{
   width:350px;
   height: 300px;
-  top: 1991px;
-  left: 165px;
   padding: 40px 18px 40px 18px;
   gap: 10px;
-  margin-left: 200px;
-  margin-bottom: 400px;
+  margin: 0px 0px 400px 200px;
 }
 
 .list{
   width: Hug (313px)px;
 height: Hug (390px)px;
 gap: 24px;
-opacity: 0px;
 
 }
 .nutrition_text{
@@ -424,8 +399,6 @@ margin-bottom: 20px;
   width: Hug (313px)px;
 height: Hug (329px)px;
 gap: 4px;
-list-style-type: none;
-padding: 0;
 }
 
 .list ul li{
@@ -440,15 +413,8 @@ padding: 0;
 .list ul hr{
   width: 312px;
 height: 1px;
-flex-shrink: 0;
-border: 0;
-height: 1px;
 background-color: #ccc;
 margin: 5px 0;
-}
-
-.right-text, .left-text {
-  margin: 0;
 }
 
 .right-text{
@@ -521,18 +487,18 @@ letter-spacing: -0.2px;
 height: 11px;
 background: var(--Fill-Primary, #FF642F);
 }
+
 .comments{
   width: 1110px;
 height: 2309px;
-flex-shrink: 0;
 margin-left: 200px;
-
 }
 
 .text_number{
   display: flex; 
   align-items: center;
   gap: 10px; 
+  margin: 20px 0; 
 }
 .coments_text{
   color: var(--Fill-Black, #000);
@@ -544,8 +510,8 @@ font-weight: 700;
 line-height: 72px; 
 width: 280px;
 margin-top: 30px;
-
 }
+
 .number{
   color: var(--Fill-Black, #000);
 font-feature-settings: 'clig' off, 'liga' off;
@@ -555,30 +521,25 @@ font-style: normal;
 font-weight: 400;
 line-height: 38px; 
 margin-top: 60px;
-
 }
-
 
 .comment{
   width: 1110px;
 height: 300px;
-flex-shrink: 0;
 margin-top: 20px;
 }
+
 .title_avatar {
   display: inline-flex; 
   flex-direction: row; 
   align-items: center; 
   gap: 21px;
- 
 }
+
 .avatar{
   display: flex;
 width: 48px;
 height: 48px;
-justify-content: center;
-align-items: center;
-flex-shrink: 0;
 }
 
 .title ul{
@@ -605,37 +566,27 @@ font-weight: 400;
 line-height: 24px; 
 }
 
-
-
 .buttons ul {
   display: flex; 
-  list-style: none;
   margin-top: 20px;
 }
 
 .buttons ul li {
   display: flex;
-  align-items: center; 
   margin-right: 20px;
   opacity: 0.5;
-  cursor: pointer;
-  
+  cursor: pointer; 
 }
 
 .buttons ul li i {
   margin-right: 5px;
 }
 
-
-
 #foto_avatar{
-  border-radius: 30px;
+  border-radius: 50%;
   display: flex;
 width: 40px;
 height: 40px;
-justify-content: center;
-align-items: flex-start;
-flex-shrink: 0;
 }
 
 #name{
@@ -661,14 +612,13 @@ line-height: 23px;
 .comment_btn{
   display: inline-flex;
 padding: 13px 48px;
-align-items: center;
 gap: 10px;
 border-radius: 4px;
 border: 1px solid var(--Fill-Black, #000);
 cursor: pointer;
-margin-left: 300px;
-
+margin-left: 350px;
 }
+
 .comment_btn span{
   color: var(--Fill-Black, #000);
 text-align: center;
@@ -679,14 +629,11 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 letter-spacing: -0.2px;
-
 }
 
 .write_comment{
   width: 1110px;
 height: 440px;
-flex-shrink: 0;
-margin-top: 50px;
 margin-top: 100px;
 }
 
@@ -716,7 +663,6 @@ font-style: normal;
 margin-right: 10px;
 font-weight: 400;
 line-height: 24px; 
-
 }
 
 .login{
@@ -727,7 +673,6 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 24px; 
-
 }
 
 .form_div{
@@ -738,21 +683,27 @@ padding: 32px;
 justify-content: center;
 align-items: flex-end;
 gap: 91px;
-flex-shrink: 0;
-margin-top: 30px;
-
+margin-top: 30px
 }
 
-.form_div form{
-  resize: none;
+.form_div textarea {
   color: var(--Fill-Black, #000);
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; 
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+  width: 700px;
+  height: 250px; 
+  padding: 10px; 
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  resize: none;
 }
+
 .post_btn{
   cursor: pointer;
   display: flex;
@@ -762,6 +713,7 @@ gap: 10px;
 border-radius: 4px;
 background: var(--Fill-Primary, #FF642F);
 }
+
 .post_btn span{
   color: var(--Fill-White, #FFF);
 text-align: center;
@@ -779,6 +731,9 @@ width: 130px;
   width: 1110px;
 height: 698px;
 flex-shrink: 0;
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
 }
 
 .cart{
@@ -786,17 +741,23 @@ flex-shrink: 0;
 flex-direction: column;
 align-items: center;
 gap: 8px;
-margin-left: 10px;
-margin-bottom: 60px;
+margin:0px 0px 40px 10px ;
 }
+
 .img{
   width: 255px;
 height: 191px;
 }
 
+.img img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 .img_name{
   width: 255px;
 }
+
 .img_name p{
   color: var(--Fill-Black, #000);
 font-feature-settings: 'clig' off, 'liga' off;
@@ -806,6 +767,7 @@ font-style: normal;
 font-weight: 600;
 line-height: 28px; 
 }
+
 .title_text2{
   color: var(--Fill-Black, #000);
 font-feature-settings: 'clig' off, 'liga' off;
@@ -820,20 +782,13 @@ margin-bottom: 40px;
 .inbox{
   width: 1100px;
 height: 610px;
-flex-shrink: 0;
 background: var(--Primary-Light, #FFD7C9);
 display: flex;
 align-items: center;
 justify-content: center;
 margin-bottom: 70px;
-
 }
 
-.join{
-  width: 530px;
-height: 395px;
-flex-shrink: 0;
-}
 .title_text3{
   width: 529px;
   color: var(--Fill-Black, #000);
@@ -846,6 +801,7 @@ font-weight: 700;
 line-height: 86px;
 letter-spacing: -1px;
 }
+
 .little_title{
   color: var(--Fill-Black, #000);
 text-align: center;
@@ -868,17 +824,16 @@ padding: 2px;
 justify-content: center;
 align-items: center;
 gap: 266px;
-flex-shrink: 0;
 border-radius: 4px;
 background: var(--Fill-White, #FFF);
 }
+
 .join_btn{
   display: flex;
 width: 150px;
 padding: 19px 42px;
 justify-content: center;
 align-items: center;
-flex-shrink: 0;
 background: var(--Fill-Primary, #FF642F);
 cursor: pointer;
 border: hidden;
@@ -908,10 +863,10 @@ height: 68px;
 width: 500px;
 display: flex;
 padding: 0px 22px;
-align-items: center;
 gap: 10px;
 border: hidden;
 }
+
 .email_div input ::placeholder{
   display: flex;
 padding: 0px 22px;
@@ -930,3 +885,4 @@ font-weight: 400;
 line-height: 15px; 
 margin-top: 20px;
 }
+
